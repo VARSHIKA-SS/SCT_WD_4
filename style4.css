@@ -1,0 +1,137 @@
+/* General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 480px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.container:hover {
+  transform: translateY(-2px);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-section input, .input-section button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#taskInput, #dateInput {
+  flex: 1;
+}
+
+#addTaskBtn {
+  background: #a1c4fd;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#addTaskBtn:hover {
+  background: #c2e9fb;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #eee;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.task-buttons button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  transition: 0.2s;
+}
+
+.complete-btn { background: #d4edda; }
+.complete-btn:hover { background: #b7e4c7; }
+
+.edit-btn { background: #ffeeba; }
+.edit-btn:hover { background: #ffd880; }
+
+.delete-btn { background: #f8d7da; }
+.delete-btn:hover { background: #f5a6ad; }
+
+/* Undo Section */
+.undo-section {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#undoBtn {
+  background: #d6d6f5;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#undoBtn:disabled {
+  background: #e6e6e6;
+  cursor: not-allowed;
+}
